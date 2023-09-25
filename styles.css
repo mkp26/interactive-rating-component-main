@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Poppins:wght@200;300;400&family=Roboto:wght@100;400&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #131519;
+    color: #7a8590;
+    font-family: 'Overpass', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: start;
+    font-size: 20px;
+}
+main{
+    width: 500px;
+    padding: 25px;
+    height: 450px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #252934, #171e28);
+}
+#star{
+    display: flex;
+    align-items: left;
+    background-color: #262f38;
+    padding: 15px;
+    border-radius: 50%;
+}
+h1{
+    color: white;
+    font-size: 2em;
+}
+#submit-btn{
+    border: none;
+    height: 50px;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: hsl(25, 97%, 53%);
+}
+#submit-btn:hover{
+    color: hsl(25, 97%, 53%);
+    background-color: white;
+}
+.rate{
+    border: none;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    margin: 12px;
+    color: #7d8993;
+    font-size: 1.25em;
+    background-color: #242E36;
+    cursor: pointer;
+}
+.rate:hover{
+    color: white;
+    background-color: hsl(25, 97%, 53%);
+}
+.rate:focus{
+    background-color: #798696;
+    color: white;
+}
+.rate-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+#thx-svg{
+    scale: 125%;
+    margin-bottom: 50px;
+}
+.thanks{
+    display: none;
+    width: 500px;
+    padding: 25px;
+    height: 450px;
+    border-radius: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #252934, #171e28);
+}
+span {
+    background-color: #262f38;
+    padding: 10px;
+    color: #b86029;
+    border-radius: 30px;
+}
+#thxp {
+    text-align: center;
+}
+
+@media screen and (max-width: 600px){
+    main{
+        width: 80%;
+        height: 80%;
+        font-size: 1.25rem;
+    }
+    .rate{
+        width: 50px;
+        height: 50px;
+        margin: 6px;
+    }
+    .rate-bar{
+        margin-top: 40px;
+    }
+    #submit-btn{
+       margin-top: 60px;
+    }
+    .thanks{
+        height: 80%;
+        width: 80%;
+        font-size: 1.25rem;
+    }
+}
+@media screen and (max-width: 300px){
+    main{
+        font-size: 1rem;
+    }
+    .rate{
+        width: 45px;
+        height: 45px;
+        margin: 2px;
+    }
+    .rate-bar{
+        margin-top: 40px;
+    }
+    #submit-btn{
+       margin-top: 60px;
+    }
+    .thanks{
+        height: 80%;
+        width: 80%;
+        font-size: 1rem;
+    }
+}
